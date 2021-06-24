@@ -1,0 +1,29 @@
+<ng-container *ngIf="products.length; then product; else error"></ng-container>
+
+<ng-template #product> 
+<div class="row">
+    <div class="col-3" *ngFor="let prod of products" >
+        <div class="card">
+           
+            <div class="card-header">             
+               {{prod.Brand}}
+            </div>
+            <div class="card-body">
+                <img [src]="prod.Image" height="100px" width="100px">
+               <h3>{{prod.Name}}</h3>
+               <p class="Price">{{prod.Price}}</p>
+               <button class="btn btn-success">Add to Cart</button>
+            </div>
+            <div class="card-footer">
+                Buy Now
+            </div>
+        </div>
+    </div>   
+</div>
+
+</ng-template>
+<ng-template #error>
+    <div class="Show error">
+        <h5>There is No Products Found!</h5>
+    </div>
+</ng-template>

@@ -1,0 +1,12 @@
+ul a {
+    display:block;
+    padding: 11px;
+    background-color: rgb(92, 192, 205);
+    color: #fff;
+    text-decoration: no;
+    margin-top: 4px;
+    margin-bottom: 3px;
+    border-bottom: 2px solid #fff;
+    text-align: center;
+
+}

@@ -1,0 +1,100 @@
+<p>Template driven Form</p>
+
+    <div class="px-5">
+        
+            <form (ngSubmit)="submit(data)" #data=ngForm>
+                <div class="mt-3">
+                    <label for="">Your Name</label>
+                    <input type="text" class="form-control" #cname=ngModel name="name" [(ngModel)]="customer.name" required minlength="4">
+                    <div class="text-danger" *ngIf="cname.touched && cname.errors?.required">  
+                        Name required *
+                    </div>
+
+                    <div class="text-danger" *ngIf="cname.touched && cname.invalid && !cname.errors?.required">  
+                        Name must 4 character *
+                    </div>
+                </div>
+
+                <div class="mt-3">
+                    <label for="">Your Email</label>
+                    <input type="text" class="form-control" #cemail=ngModel name="email" [(ngModel)]="customer.email" required pattern="[^@\s]+@[^@\s]+\.[^@\s]">
+                    <div class="text-danger" *ngIf="cemail.touched && cemail.errors?.required">  
+                        Email required *
+                    </div>
+
+                    <div class="text-danger" *ngIf="cemail.touched && cemail.invalid && !cemail.errors?.required">  
+                        Enter Your valid Email *                    </div>
+               
+                </div>
+                
+                <div class="mt-3">
+                    <label for="">Your Phone</label>
+                    <input type="text" class="form-control" #cphone=ngModel name="phone" [(ngModel)]="customer.phone" required>
+               
+                    <div class="text-danger" *ngIf="cphone.touched && cphone.errors?.required">  
+                        Phone required *
+                    </div>
+
+                    <div class="text-danger" *ngIf="cphone.touched && cphone.invalid && !cphone.errors?.required">  
+                       Phone must 10 character *
+                    </div>
+                </div>
+                
+                <div class="mt-3">
+                    <label for="">Choose your Country</label>
+                    <select  id="" class="form-select" name="country" [(ngModel)]="customer.country" #ccountry=ngModel required>
+                        <option value="null" selected>Select</option>
+                        <option *ngFor="let cc of country" [value]="cc.id">{{cc.name}}</option>
+                    </select> 
+                    
+                    <div class="text-danger" *ngIf="cphone.touched && cphone.errors?.required">  
+                        country required *
+                    </div>
+
+                    <div class="text-danger" *ngIf="cphone.touched && cphone.invalid && !cphone.errors?.required">  
+                      country must *
+                    </div>
+                </div>
+                
+                <div class="mt-3">
+                    <label for="">Enter your Address</label>                    
+                   <textarea id="" class="form-control" name="address" [(ngModel)]="customer.address" #caddress=ngModel required minlength="4">
+                    <div class="text-danger" *ngIf="caddress.touched && caddress.errors?.required">  
+                        Address required *
+                    </div>
+
+                    <div class="text-danger" *ngIf="caddress.touched && caddress.invalid && !caddress.errors?.required">  
+                      <address> must 10 character *</address> *
+                    </div>
+                   </textarea>
+                </div>
+                
+                <div class="mt-3">
+                    <label for="">Password</label>
+                    <input type="text" class="form-control" name="password" [(ngModel)]="customer.password" #cpass=ngModel required minlength="4" pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$">
+                    <div class="text-danger" *ngIf="cpass.touched && cpass.errors?.required">  
+                        password required *
+                    </div>
+
+                    <div class="text-danger" *ngIf="cpass.touched && cpass.invalid && !cpass.errors?.required">  
+                        Minimum eight characters, at least one upper case English letter, one lower case English letter, one number and one special character 
+                    </div>
+                </div>
+                
+                <div class="mt-3">
+                    <label for="">Confirm Password</label>
+                    <input type="text" class="form-control" name="confirmPassword" [(ngModel)]="customer.confirmPassword" #ccpass=ngModel required minlength="4" appConfirmPassword>
+                    <div class="text-danger" *ngIf="ccpass.touched && ccpass.errors?.required">  
+                        password required *
+                    </div>
+
+                    <div class="text-danger" *ngIf="ccpass.touched && !ccpass.errors?.required && ccpass.invalid">  
+                        confirmPassword not Matched ! </div>
+                </div>
+
+                <div class="mt-3">
+                    <button type="submit" class="btn btn-success" value="signup">Signup</button>
+                </div>
+            </form>
+ 
+</div>

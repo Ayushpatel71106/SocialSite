@@ -1,0 +1,55 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "name": "ayush patel",
+      "email": "ayushpatel@gmail.com",
+      "phone": "8083106697",
+      "country": "indain",
+      "address": "noida",
+      "photo": "/assets/sam.jpg"
+    },
+    {
+      "id": 2,
+      "name": "ayushi patel",
+      "email": "ayushipatel@gmail.com",
+      "phone": "654641",
+      "country": "india",
+      "address": "delhi",
+      "photo": "/assets/sam.jpg"
+    },
+    {
+      "id": 3,
+      "name": "piyush patel",
+      "email": "piyush@gmail.com",
+      "phone": "55131323",
+      "country": "us",
+      "address": "bihar",
+      "photo": "/assets/sam.jpg"
+    },
+    {
+      "name": "mitali",
+      "email": "mitali@gmail.com",
+      "phone": "6494645565",
+      "country": "India",
+      "address": "delhi",
+      "password": "741236",
+      "Confirmpassword": "741236",
+      "photo": "C:\\fakepath\\7.png",
+      "check": true,
+      "id": 6
+    },
+    {
+      "name": "malti",
+      "email": "malti@gmail.com",
+      "phone": "987654467",
+      "country": "America",
+      "address": "yes",
+      "password": "12345",
+      "Confirmpassword": "12345",
+      "photo": "C:\\fakepath\\7.png",
+      "check": true,
+      "id": 7
+    }
+  ]
+}

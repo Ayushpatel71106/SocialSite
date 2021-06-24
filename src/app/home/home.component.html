@@ -1,0 +1,34 @@
+<div class="container mt-2">
+    <div class="row app-container p-2">
+            <div class="col-lg-10 offset-md-1">
+                Home content area !
+                <input type="text" placeholder="Enter text here ..." value="{{state}}">
+                <hr>
+               <h3> Your name is :{{state}}</h3>
+               <hr>
+           
+                <input type="name" class="form-control" id ="search" placeholder="Search Product" [(ngModel)]="nameSearch">
+
+               <table class="table table-bordered">
+                   <tr>
+                       <th>Id</th>
+                       <th>Title</th>
+                       <th>Price</th>
+                       <th>Quantity</th>
+                   </tr>
+                   <tr *ngFor="let item of Items | filter :nameSearch" >
+                       <th>{{item.Id}}</th>
+                       <th>{{item.title}}</th>
+                       <th>{{item.Price}}</th>
+                       <th>{{item.Quantity}}</th>
+                   </tr>
+               </table>
+
+                <!-- Two Way Databinding... -->
+            <h1>Two way DataBinding..</h1>
+            <input type="text" placeholder="Enter Text .." [(ngModel)]="initialstate">
+            <hr>
+            <h2> Your name here :{{initialstate}}</h2>
+            </div>    
+    </div>
+</div>
