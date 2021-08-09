@@ -48,8 +48,7 @@
         </li>
       </ul>
 
-      
- 
+      <!-- <a href="" class="m-4"><i class="bi bi-cloud-sun">{{cityName}}</i></a> -->
 <!-- Profile working -->
      
       <div class="dropdown">
@@ -66,6 +65,10 @@
 <!-- profile working stop -->`  
 
       <form class="d-flex"  (ngSubmit)="submit(data)" #data=ngForm>
+        <label for="" class="m-2">Temp:{{ temp }}</label>
+        <label for="" class="m-2">Min:{{ min }}</label>
+        <label for="" class="m-2">Max:{{ max }}</label>
+
         <input
           class="form-control me-2"
           type="search"

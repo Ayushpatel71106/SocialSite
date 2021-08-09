@@ -31,6 +31,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ToastrModule } from 'ngx-toastr';
 import { TempratureComponent } from './temprature/temprature.component';
+import { RegistrationListComponent } from './profile/registration-list/registration-list.component';
 
 
 @NgModule({
@@ -59,7 +60,8 @@ import { TempratureComponent } from './temprature/temprature.component';
     RegisterComponent,
     ConfirmPasswordDirective,
     WeatherComponent,
-    TempratureComponent
+    TempratureComponent,
+    RegistrationListComponent
     
     
   
@@ -72,7 +74,7 @@ import { TempratureComponent } from './temprature/temprature.component';
     HttpClientModule,
     BrowserAnimationsModule, // required animations module
     ToastrModule.forRoot(), // ToastrModule added
-    
+   
     
    
   ],

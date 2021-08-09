@@ -10,15 +10,6 @@
       "photo": "/assets/sam.jpg"
     },
     {
-      "id": 2,
-      "name": "ayushi patel",
-      "email": "ayushipatel@gmail.com",
-      "phone": "654641",
-      "country": "india",
-      "address": "delhi",
-      "photo": "/assets/sam.jpg"
-    },
-    {
       "id": 3,
       "name": "piyush patel",
       "email": "piyush@gmail.com",
@@ -40,16 +31,40 @@
       "id": 6
     },
     {
-      "name": "malti",
-      "email": "malti@gmail.com",
-      "phone": "987654467",
-      "country": "America",
-      "address": "yes",
+      "name": "Ayush Patel",
+      "email": "ayushpatel.ismp@gmail.com",
+      "phone": "8083106697",
+      "country": "India",
+      "address": "Noida-134",
       "password": "12345",
       "Confirmpassword": "12345",
       "photo": "C:\\fakepath\\7.png",
       "check": true,
       "id": 7
+    },
+    {
+      "name": "manisha kumari",
+      "email": "manish@gmail.com",
+      "phone": "6465649451",
+      "country": "Russia",
+      "address": "sdsfssddv",
+      "password": "1234",
+      "Confirmpassword": "1234",
+      "photo": "C:\\fakepath\\Screenshot (46).png",
+      "check": true,
+      "id": 11
+    },
+    {
+      "name": "sunil kumar",
+      "email": "sunil@gmail.com",
+      "phone": "9874563210",
+      "country": "America",
+      "address": "usa",
+      "password": "123456",
+      "Confirmpassword": "123456",
+      "photo": "C:\\fakepath\\Screenshot (43).png",
+      "check": true,
+      "id": 12
     }
   ]
 }

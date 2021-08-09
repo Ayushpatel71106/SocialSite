@@ -60,15 +60,16 @@ export class RegisterComponent implements OnInit {
         this.getAllCustomer();
       }
     })
+    this.fgroup.reset();
     
   }
 
-  resetForm(fgroup)
-  {
-    if(fgroup!=null)
-    fgroup.resetForm(); 
+  // resetForm(fgroup)
+  // {
+  //   if(fgroup!=null)
+  //   fgroup.resetForm(); 
     
-  }
+  // }
 
   deletecustomer(id)
   {
@@ -86,5 +87,8 @@ export class RegisterComponent implements OnInit {
     event.preventDefault();
     console.log(customer);
     Object.assign(this.customer,customer);
+    
+    
   }
+ 
 }

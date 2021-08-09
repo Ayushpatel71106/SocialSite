@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup,FormBuilder,FormControlName } from '@angular/forms';
 import { Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { AuthoService } from 'src/app/authentication/autho.service';
 
 @Component({
@@ -15,7 +16,7 @@ fgroup:FormGroup;
   successMessage: any;
   errorMessage: any;
 
-  constructor(private _router:Router,private _autho:AuthoService,private _title:Title) {
+  constructor(private _router:Router,private _autho:AuthoService,private _title:Title,private _tostar:ToastrService) {
     this.fgroup = new FormGroup({
       userid:new FormControl(''),
       password:new FormControl('')
@@ -32,15 +33,19 @@ fgroup:FormGroup;
   {
    console.log(this.fgroup.value)
    const user=this.fgroup.value;
+  
    if(user.userid=="admin" && user.password=="12345")
    {
-     this.successMessage="login successfully !";
+    // this.successMessage="login successfully !";
+    this._tostar.success("login successfully !","Login")
      this._autho.SetLogin();
      setTimeout(()=>{
        this._router.navigate(["/home"]);
+       
      },3000)
    }else{
-     this.errorMessage="invalid login credentials !";  
+    this._tostar.error("invalid login credentials !","Login")
+     //this.errorMessage="invalid login credentials !";  
    }
    
   }

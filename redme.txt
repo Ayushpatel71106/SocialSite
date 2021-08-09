@@ -1,1 +1,5 @@
-http://api.openweathermap.org/data/2.5/weather?q={delhi}&appid=5d3adbfc4eda4e4f8f62c8d222c0b76c
+//http://api.openweathermap.org/data/2.5/weather?q={delhi}&appid=5d3adbfc4eda4e4f8f62c8d222c0b76c
+
+
+
+https://api.openweathermap.org/data/2.5/weather?q={city name}&appid=5d3adbfc4eda4e4f8f62c8d222c0b76c

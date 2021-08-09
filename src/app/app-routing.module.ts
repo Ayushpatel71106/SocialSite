@@ -18,6 +18,7 @@ import { DashboardComponent } from './profile/dashboard/dashboard.component';
 import { LayoutComponent } from './profile/layout/layout.component';
 import { LoginComponent } from './profile/login/login.component';
 import { RegisterComponent } from './profile/register/register.component';
+import { RegistrationListComponent } from './profile/registration-list/registration-list.component';
 import { SignupComponent } from './profile/signup/signup.component';
 import { TempratureComponent } from './temprature/temprature.component';
 import { WeatherComponent } from './weather/weather.component';
@@ -28,6 +29,7 @@ const routes: Routes = [
   {path:'login',component:LoginComponent},
   {path:'dashboard',component:DashboardComponent},
   {path:'register',component:RegisterComponent},
+  {path:'register-list',component:RegistrationListComponent},
   {path:'temprature',component:TempratureComponent},
 
   {path:"home",component:HomeComponent},

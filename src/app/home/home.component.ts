@@ -33,6 +33,7 @@ export class HomeComponent implements OnInit {
   
    initialstate="Patel"
 
+  
    
 
 }
